@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="90" viewBox="0 0 160 90" role="img" aria-label="Розумні діти: відкрита книга">
+  <rect width="160" height="90" rx="10" fill="#f3f5f3"/>
+  <path d="M24 22 Q50 15 80 29 L80 72 Q50 58 24 65 Z" fill="#28658c"/>
+  <path d="M136 22 Q110 15 80 29 L80 72 Q110 58 136 65 Z" fill="#347555"/>
+  <path d="M80 29 V72" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <path d="M35 34 Q53 31 68 37 M35 45 Q53 42 68 48 M35 56 Q53 53 68 59 M92 37 Q107 31 125 34 M92 48 Q107 42 125 45 M92 59 Q107 53 125 56" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M76 13 L80 7 L84 13 L80 19 Z" fill="#347555"/>
+</svg>

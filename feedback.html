@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Форма зворотного зв’язку дитячого порталу Розумні діти">
+    <title>Розумні діти — зворотний зв’язок</title>
+<link rel="stylesheet" href="styles.css">
+    <style>/* Внутрішня таблиця стилів */
+        footer p { color: rgb(80, 80, 80); }
+    </style>
+</head>
+<body class="feedback">
+    <header>
+        <div class="brand">
+            <img src="images/logo.png" width="160" height="90" alt="Логотип веб-порталу Розумні діти">
+            <h1>Веб-портал «Розумні діти»</h1>
+        </div>
+        <nav aria-label="Головна навігація">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="courses.html">Навчальні матеріали</a></li>
+                <li><a href="feedback.html" aria-current="page">Зворотний зв’язок</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Зворотний зв’язок</h2>
+        <p>Заповніть форму, і команда порталу розгляне ваше повідомлення.</p>
+
+        <form action="feedback.html" method="post">
+            <fieldset>
+                <legend>Персональна інформація</legend>
+
+                <p>
+                    <label for="parent-name">Прізвище та ім’я батьків:</label><br>
+                    <input type="text" id="parent-name" name="parent-name" autocomplete="name" minlength="3" maxlength="80" required>
+                </p>
+
+                <p>
+                    <label for="parent-email">E-mail батьків:</label><br>
+                    <input type="email" id="parent-email" name="parent-email" autocomplete="email" placeholder="name@example.com" required>
+                </p>
+
+                <p>
+                    <label for="child-age">Вік дитини:</label><br>
+                    <input type="number" id="child-age" name="child-age" min="3" max="14" required>
+                </p>
+
+                <p>Стать дитини:</p>
+                <p>
+                    <input type="radio" id="gender-girl" name="child-gender" value="girl" required>
+                    <label for="gender-girl">Дівчинка</label>
+
+                    <input type="radio" id="gender-boy" name="child-gender" value="boy">
+                    <label for="gender-boy">Хлопчик</label>
+
+                    <input type="radio" id="gender-other" name="child-gender" value="other">
+                    <label for="gender-other">Інше / не вказувати</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <label for="feedback-purpose">Мета зворотного зв’язку:</label><br>
+                <select id="feedback-purpose" name="feedback-purpose" required>
+                    <option value="" selected disabled>Оберіть мету</option>
+                    <option value="cooperation">Співпраця</option>
+                    <option value="content-complaint">Скарга на неякісний контент</option>
+                    <option value="suggestion">Пропозиція</option>
+                    <option value="error">Наявність помилки</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="details">Детально:</label><br>
+                <textarea id="details" name="details" rows="7" cols="50" maxlength="500" placeholder="Опишіть ваше звернення (до 500 символів)" required></textarea>
+            </p>
+
+            <p>
+                <input type="checkbox" id="data-consent" name="data-consent" value="yes" required>
+                <label for="data-consent">Я даю згоду на обробку наданої інформації.</label>
+            </p>
+
+            <p>
+                <button type="submit">Надіслати</button>
+                <button type="reset">Очистити форму</button>
+            </p>
+        </form>
+
+        <p><a href="index.html">Повернутися на головну сторінку</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Веб-портал «Розумні діти»</p>
+    </footer>
+</body>
+</html>

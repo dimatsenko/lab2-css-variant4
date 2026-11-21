@@ -1,0 +1,204 @@
+/* Спільні стилі */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px 16px;
+    font: 16px/1.5 Arial, sans-serif;
+    color: rgb(34, 34, 34);
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header {
+    position: relative;
+    padding-top: 78px;
+}
+
+.brand {
+    position: absolute;
+    background: #f3f5f3;
+    padding: 12px;
+    min-height: 78px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.brand img {
+    float: left;
+    width: 96px;
+    height: 54px;
+    margin-right: 12px;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li+li {
+    margin-left: 12px;
+}
+
+a[href*="mailto"] {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #aaa;
+    padding: 6px;
+}
+
+button {
+    padding: 6px 12px;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    background-color: white;
+    color: #222;
+    transition: background-color .25s, color .25s, box-shadow .25s;
+}
+
+button:hover {
+    background-color: darkgreen;
+    color: white;
+    box-shadow: 0 2px 6px #888;
+}
+
+/* Головна */
+a {
+    color: darkgreen;
+}
+
+.home nav {
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+#purpose {
+    margin: 24px 0;
+    padding: 0;
+}
+
+#topics {
+    max-height: 360px;
+    overflow: auto;
+    transition: transform .25s;
+}
+
+#topics:hover {
+    transform: translateX(2vw);
+}
+
+.intro::first-letter {
+    color: darkgreen;
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+#contacts {
+    padding: 12px 16px;
+}
+
+#contacts:focus-within {
+    transition: box-shadow .2s 2s;
+    box-shadow: 0 2px 14px 3px #39734c;
+}
+
+/* Наші курси */
+.courses .brand {
+    position: fixed;
+    width: calc(100% - 32px);
+    max-width: 1068px;
+    margin: 0 auto;
+}
+
+.courses main>ol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding-left: 24px;
+}
+
+.courses article {
+    border: 1px solid #40104f;
+    border-left: 2px dashed #40104f;
+    padding: 12px;
+}
+
+.courses h3 {
+    font: italic bold 23px Georgia, serif;
+}
+
+.courses article img {
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+}
+
+@keyframes saturate-photo {
+    to {
+        filter: saturate(150%);
+    }
+}
+
+.courses article img:hover {
+    animation: saturate-photo .5s forwards;
+}
+
+.courses a:visited {
+    color: darkred;
+}
+
+/* Зворотний зв’язок */
+.feedback form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.feedback fieldset {
+    flex-basis: 100%;
+}
+
+.feedback form>p {
+    flex: 1 1 45%;
+    margin: 0;
+}
+
+.feedback form>p,
+textarea,
+select {
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .feedback form>p {
+        flex-basis: 100%;
+    }
+}

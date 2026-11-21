@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Дитячий навчальний портал Розумні діти">
+    <title>Розумні діти — головна</title>
+<link rel="stylesheet" href="styles.css">
+    <style>/* Внутрішня таблиця стилів */
+        footer p { color: rgb(80, 80, 80); }
+    </style>
+</head>
+<body class="home">
+    <header>
+        <div class="brand">
+            <img src="images/logo.png" width="160" height="90" alt="Логотип веб-порталу Розумні діти">
+            <h1>Веб-портал «Розумні діти»</h1>
+        </div>
+        <nav aria-label="Головна навігація">
+            <ul>
+                <li><a href="index.html" aria-current="page">Головна</a></li>
+                <li><a href="courses.html">Навчальні матеріали</a></li>
+                <li><a href="feedback.html">Зворотний зв’язок</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>Навчаємося цікаво, граємо та відкриваємо світ разом!</p>
+        <form action="feedback.html" method="get">
+            <button type="submit" name="action" value="login">Перейти у власний кабінет</button>
+            <button type="submit" name="action" value="register">Зареєструватися</button>
+        </form>
+
+        <article id="purpose">
+            <h2>Мета порталу</h2>
+            <p>Мета порталу — допомогти дітям засвоювати нові знання через зрозумілі пояснення, цікаві вправи та навчальні ігри.</p>
+
+            <h3>Наші завдання</h3>
+            <ul>
+                <li>розвивати логічне й творче мислення дитини;</li>
+                <li>пояснювати складні теми простою мовою;</li>
+                <li>заохочувати до самостійного навчання;</li>
+                <li>допомагати батькам добирати корисні матеріали.</li>
+            </ul>
+
+            <p><span><i><b><em><u>Кожна дитина може навчатися із задоволенням і впевнено відкривати нове.</u></em></b></i></span></p>
+        </article>
+
+        <article id="topics">
+            <h2>Чого ми навчаємо</h2>
+            <p class="intro">На порталі зібрані курси для розвитку мовлення, математичних здібностей, знань про природу, творчості та цифрової грамотності.</p>
+
+            <table class="topics-table">
+                <caption>Навчальні напрями та теми порталу</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2" scope="col">Вікова група</th>
+                        <th colspan="2" scope="colgroup">Навчальна тема</th>
+                        <th rowspan="2" scope="col">Тип завдань</th>
+                        <th rowspan="2" scope="col">Тривалість</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Напрям</th>
+                        <th scope="col">Приклади уроків</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">4–6 років</td>
+                        <td>Підготовка до школи</td>
+                        <td>Форми, кольори, порівняння</td>
+                        <td>Ігри та картки</td>
+                        <td>15 хвилин</td>
+                    </tr>
+                    <tr>
+                        <td>Розвиток мовлення</td>
+                        <td>Звуки, слова, короткі речення</td>
+                        <td>Аудіовправи</td>
+                        <td>15 хвилин</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">7–9 років</td>
+                        <td>Математика</td>
+                        <td>Числа, додавання, геометрія</td>
+                        <td>Задачі та вікторини</td>
+                        <td>20 хвилин</td>
+                    </tr>
+                    <tr>
+                        <td>Я досліджую світ</td>
+                        <td>Природа, людина, планета</td>
+                        <td>Досліди та тести</td>
+                        <td>25 хвилин</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">10–12 років</td>
+                        <td>Цифрова грамотність</td>
+                        <td>Безпека, алгоритми, інформація</td>
+                        <td>Практичні вправи</td>
+                        <td>30 хвилин</td>
+                    </tr>
+                    <tr>
+                        <td>Творча майстерня</td>
+                        <td>Малювання, музика, історії</td>
+                        <td>Творчі проєкти</td>
+                        <td>30 хвилин</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4" scope="row">Загальна кількість навчальних напрямів</th>
+                        <td>6</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+
+        <aside>
+            <h2>Корисні ресурси</h2>
+            <ul>
+                <li><a href="https://learning.ua/" target="_blank" rel="noopener noreferrer">Learning.ua — навчальні вправи</a></li>
+                <li><a href="https://childdevelop.com.ua/" target="_blank" rel="noopener noreferrer">Розвиток дитини — матеріали для занять</a></li>
+            </ul>
+
+            <h3>Швидкий перехід сторінкою</h3>
+            <ul>
+                <li><a href="#purpose">Мета порталу</a></li>
+                <li><a href="#topics">Навчальні теми</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer id="contacts" tabindex="0">
+        <h2>Контакти</h2>
+        <address>
+            м. Київ, вул. Освітня, 4<br>
+            Телефон: <a href="tel:+380441234567">+38 (044) 123-45-67</a><br>
+            Телефон: <a href="tel:+380671234567">+38 (067) 123-45-67</a><br>
+            E-mail: <a href="mailto:info@rozumni-dity.example">info@rozumni-dity.example</a>
+        </address>
+        <p>&copy; 2026 Веб-портал «Розумні діти»</p>
+    </footer>
+</body>
+</html>
